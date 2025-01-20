@@ -1,5 +1,5 @@
 import { SidebarProvider, Sidebar, SidebarContent, SidebarHeader, SidebarMenu, SidebarMenuItem, SidebarMenuButton } from "@/components/ui/sidebar";
-import { Leaf, Factory, MapPin, GraduationCap, Users, Tree, Search, Bell, UserCircle } from "lucide-react";
+import { Leaf, Factory, MapPin, GraduationCap, Users, Trees, Search, Bell, UserCircle } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,7 @@ const menuItems = [
   { title: "Tourism", icon: MapPin, path: "/dashboard/tourism" },
   { title: "Youth Empowerment", icon: GraduationCap, path: "/dashboard/youth" },
   { title: "Community", icon: Users, path: "/dashboard/community" },
-  { title: "Conservation", icon: Tree, path: "/dashboard/conservation" },
+  { title: "Conservation", icon: Trees, path: "/dashboard/conservation" },
 ];
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {
