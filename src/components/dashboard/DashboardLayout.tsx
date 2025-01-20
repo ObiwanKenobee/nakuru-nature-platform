@@ -38,9 +38,9 @@ export function DashboardLayout({ children }: { children: React.ReactNode }) {
                     isActive={location.pathname === item.path}
                     tooltip={item.title}
                   >
-                    <Link to={item.path}>
-                      <item.icon />
-                      <span>{item.title}</span>
+                    <Link to={item.path} className="flex items-center gap-2">
+                      <item.icon className="h-4 w-4" />
+                      {item.title}
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
